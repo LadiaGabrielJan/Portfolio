@@ -1,3 +1,6 @@
+
+
+
 /* Reset some default styling */
 body {
   margin: 0;
@@ -17,9 +20,7 @@ header {
   font-family: 'Nunito Sans', sans-serif;
 }
 
-
-
-   /* Add this CSS code to your existing styles */
+/* Name styling */
 .name {
   margin-right: auto; /* Pushes the name to the opposite side */
   font-size: 23px; /* Adjust the font size as needed */
@@ -29,10 +30,6 @@ header {
 .name a {
   color: #fefefe; /* Replace with your desired color code */
 }
-
-
-
-
 
 .container {
   width: 80%;
@@ -60,49 +57,35 @@ nav ul li a {
 #about {
   background-color: #f4f4f4;
   padding: 50px 0;
-  
 }
-
-
-
-
 
 /* Adjust the "About" section layout */
 #about .container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  text-align: left; /* Align paragraph text to the left */
+  text-align: left;
   max-width: 1200px;
-  
 }
 
 #about h2 {
   font-family: 'Nunito Sans', sans-serif;
-  margin-top: 0; /* Remove default margin */
+  margin-top: 0;
 }
 
 #about p {
   font-family: 'Nunito Sans', sans-serif;
-  margin-top: 10px; /* Add margin to the top of each paragraph */
-  margin-bottom: 10px; /* Add margin to the bottom of each paragraph */
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-size: 18px;
-  
 }
 
 .highlight-name {
-  color: rgb(28, 149, 7); /* Change to the desired color */
+  color: rgb(28, 149, 7);
 }
 
-
-
-
-
-
-
-
 /* Portfolio section styling */
-#project {
+#projects {
   padding: 50px 0;
 }
 
@@ -115,53 +98,10 @@ nav ul li a {
 }
 
 .project img {
-  max-width: 40vh;
-  
+  max-width: 100%;
 }
 
-
-
-/* Contact section styling */
-#contact {
-  background-color: #333;
-  color: #fff;
-  padding: 40px 0;
-  text-align: center;
-  height: 50px;
-  
-}
-
-/* Footer styling */
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #333;
-  height: 50px; /* Adjust as needed */
-  
-}
-
-.social-icons a {
-  color: #ffffff;
-  font-size: 24px;
-  margin: 0 10px;
-  text-decoration: none;
-
- 
-}
-
-.footer-logo {
-  display: flex;
-  align-items: left;
-  color: #ffffff; /* Change text color to white or your preferred color */
-  
-  
-}
-
-
-
-
-/* Add this CSS code to style the "Read More" links */
+/* Read more link styling */
 .read-more-link {
   display: inline-block;
   margin-top: 10px;
@@ -177,76 +117,53 @@ footer {
   background-color: #049e11;
 }
 
+/* Contact section styling */
+#contact {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+  height: 50px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#projects .container {
-  margin-top: 100px;
-  margin-bottom: 100px;
+/* Footer styling */
+footer {
   display: flex;
-  align-items: center; /* Center items horizontally */
-  justify-content: center; /* Center items vertically */
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  height: 50px;
 }
 
-/* Change the font size of the portfolio header */
-#projects h2 {
-  font-family: 'Nunito Sans', sans-serif;
-  text-align: center;
-  margin-top: 0;
- 
-}
-
-
-#projects .project h3 {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 24px; /* Adjust the font size as needed */
-  /* Add any other font-related properties here */
-}
-
-#projects .project p {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 18px; /* Adjust the font size as needed */
-  /* Add any other font-related properties here */
-}
-
-h6 {
-  text-align: center;
-  font-family: 'Nunito Sans', sans-serif;
-  margin-top: 100px;
-  margin-bottom: -100px;
+.social-icons a {
+  color: #ffffff;
   font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
 }
 
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
 
-#contact h2 {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 24px;
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .project {
+    margin: 20px 0;
+    padding: 15px;
+  }
 }
 
-
-
-.project {
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.project:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
